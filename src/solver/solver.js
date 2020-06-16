@@ -1,7 +1,7 @@
 function solve_(grid) {
     for (let [y, row] of grid.entries()) {
         for (let [x, num] of row.entries()) {
-            if (num == 0) {
+            if (num === 0) {
                 let column = getCurrentColumn(grid, x)
                 let square = getCurrentSquare(grid, x, y)
                 for (let i = 1; i < 10; i++) {
@@ -52,4 +52,4 @@ function solve(inputGrid) {
     return inputGrid
 }
 
-module.exports = solve
+export default solve
