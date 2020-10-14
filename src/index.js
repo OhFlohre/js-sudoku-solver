@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+import { WorkerProvider } from './context/workerContext'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <WorkerProvider>
+      <App />
+    </WorkerProvider>
+  </Router>,
   document.getElementById('root')
 );
-
-serviceWorker.register();
