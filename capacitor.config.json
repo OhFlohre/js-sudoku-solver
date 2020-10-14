@@ -1,0 +1,7 @@
+{
+  "appId": "com.ohflohre.sudoku-solver",
+  "appName": "Sudoku Solver",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist"
+}
